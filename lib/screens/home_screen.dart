@@ -6,18 +6,24 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('MoreKast - Multiroom Portable')),
+      appBar: AppBar(title: const Text('MoreKast - Multiroom')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ServerScreen())),
+              onPressed: () {
+                // TODO: Navigate to Server Screen
+                Navigator.push(context, MaterialPageRoute(builder: (_) => const Placeholder()));
+              },
               child: const Text('Je suis le Serveur (Hotspot)'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ClientScreen())),
+              onPressed: () {
+                // TODO: Navigate to Client Screen
+                Navigator.push(context, MaterialPageRoute(builder: (_) => const Placeholder()));
+              },
               child: const Text('Je suis un Client'),
             ),
           ],
@@ -25,17 +31,4 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-// Placeholder screens
-class ServerScreen extends StatelessWidget {
-  const ServerScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const Scaffold(body: Center(child: Text('Server Screen - Hotspot + QR')));
-}
-
-class ClientScreen extends StatelessWidget {
-  const ClientScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const Scaffold(body: Center(child: Text('Client Screen')));
 }

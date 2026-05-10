@@ -1,9 +1,6 @@
-name: MoreKast
-
-description: Multiroom Audio Portable
-
+name: morekast
+description: Multiroom Audio Portable App
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
@@ -15,13 +12,13 @@ dependencies:
   flutter_riverpod: ^2.5.1
   wifi_iot: ^0.3.0
   qr_flutter: ^4.1.0
-  mobile_scanner: ^5.2.0
+  mobile_scanner: ^5.2.3
   network_tools: ^5.0.0
-  just_audio: ^0.9.0
-  audio_service: ^0.18.0
-  http: ^1.2.0
+  just_audio: ^0.9.38
+  audio_service: ^0.18.1
   web_socket_channel: ^3.0.0
-  flutter_nearby_connections: ^1.0.0
+  http: ^1.2.2
+  path_provider: ^2.1.4
 
 dev_dependencies:
   flutter_test:
