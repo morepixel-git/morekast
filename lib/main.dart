@@ -3,11 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: MoreKastApp()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MoreKastApp extends StatelessWidget {
+  const MoreKastApp({super.key});
 
   @override
   Widget build(BuildContext context) {

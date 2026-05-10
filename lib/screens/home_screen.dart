@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'server_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,24 +7,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('MoreKast - Multiroom')),
+      appBar: AppBar(title: const Text('MoreKast - Multiroom Portable')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {
-                // TODO: Navigate to Server Screen
-                Navigator.push(context, MaterialPageRoute(builder: (_) => const Placeholder()));
-              },
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ServerScreen())),
               child: const Text('Je suis le Serveur (Hotspot)'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {
-                // TODO: Navigate to Client Screen
-                Navigator.push(context, MaterialPageRoute(builder: (_) => const Placeholder()));
-              },
+              onPressed: () {},
               child: const Text('Je suis un Client'),
             ),
           ],
